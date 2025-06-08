@@ -1,0 +1,119 @@
+:root {
+    /* Primary Colors */
+    --primary-color: #3b82f6;
+    --primary-color-light: #93c5fd;
+    --primary-color-dark: #2563eb;
+    
+    /* Background Colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f3f4f6;
+    --bg-hover: #e5e7eb;
+    
+    /* Text Colors */
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    
+    /* Border Colors */
+    --border-color: #e5e7eb;
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --bg-primary: #1f2937;
+    --bg-secondary: #374151;
+    --bg-hover: #4b5563;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #4b5563;
+}
+
+.charts-container {
+    padding: 2.5rem; /* Increased padding */
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 2rem; /* Increased gap */
+}
+
+.charts-container h2 {
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.charts-container p {
+    color: var(--text-secondary);
+}
+
+.chart-card {
+    background: var(--bg-secondary);
+    padding: 2rem; /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Stronger shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color); /* Added subtle border */
+}
+
+.chart-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* More prominent hover shadow */
+    transform: translateY(-5px); /* Enhanced hover effect */
+}
+
+.chart-card h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: 700;
+    margin-bottom: 1.5rem; /* Adjusted spacing */
+    text-align: left; /* Align text to left */
+    border-bottom: 2px solid var(--border-color); /* Separator line */
+    padding-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .charts-container {
+        grid-template-columns: 1fr; /* Stack charts on smaller laptops/tablets */
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .chart-card {
+        padding: 1.5rem;
+    }
+
+    .chart-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.75rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .charts-container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .chart-card {
+        padding: 1rem;
+    }
+
+    .chart-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .chart-card {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .chart-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+} 

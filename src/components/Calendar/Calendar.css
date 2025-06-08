@@ -1,0 +1,274 @@
+.calendar-component-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.calendar-component-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.calendar-component-container p {
+    color: #666;
+}
+
+/* Calendar Styles */
+.calendar-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-top: 32px;
+  padding: 24px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.calendar-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.calendar-btn {
+  padding: 8px 16px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.calendar-btn:hover {
+  background-color: #0052cc;
+}
+
+.calendar-wrapper {
+  margin-top: 20px;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.modal-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.modal-body {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0066ff;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn-cancel {
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  color: #666;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+.btn-save {
+  padding: 8px 16px;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-save:hover {
+  background-color: #0052cc;
+}
+
+/* FullCalendar Custom Styles */
+.fc {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.fc-toolbar-title {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.fc-button {
+  background-color: #f0f7ff !important;
+  color: #0066ff !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+}
+
+.fc-button-active {
+  background-color: #0066ff !important;
+  color: white !important;
+}
+
+.fc-event {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.fc-day-today {
+  background-color: #f0f7ff !important;
+}
+
+/* Priority colors for events */
+.fc-event.high-priority {
+    background-color: #ffccbc; /* Light Red */
+    border-color: #ff3d00; /* Red */
+    color: #ff3d00; /* Red */
+}
+
+.fc-event.medium-priority {
+    background-color: #ffe0b2; /* Light Orange */
+    border-color: #ff6d00; /* Orange */
+    color: #ff6d00; /* Orange */
+}
+
+.fc-event.low-priority {
+    background-color: #c8e6c9; /* Light Green */
+    border-color: #00c853; /* Green */
+    color: #00c853; /* Green */
+}
+
+.fc-popover {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.fc-popover-header {
+    background-color: #f2f2f2;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.fc-popover-title {
+    color: #333;
+}
+
+.fc .fc-scrollgrid,
+.fc .fc-daygrid-body,
+.fc .fc-daygrid-day,
+.fc .fc-col-header,
+.fc .fc-timegrid-body,
+.fc .fc-timegrid-cols {
+    background-color: white;
+    border-color: #ddd;
+}
+
+.fc .fc-daygrid-day.fc-day-other .fc-daygrid-day-number {
+    color: #999; /* Lighter color for days outside the current month */
+}
+
+.fc .fc-daygrid-day-number {
+    color: #333;
+}
+
+.fc .fc-col-header-cell-cushion {
+    color: #666;
+}
+
+.fc .fc-daygrid-dot-event .fc-event-title {
+    color: #333;
+}
+
+.fc .fc-event-time,
+.fc .fc-event-title {
+    color: #333;
+}

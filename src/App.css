@@ -1,0 +1,44 @@
+.app {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+}
+
+.main-content {
+    flex-grow: 1;
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px; /* Consistent padding */
+    width: calc(100% - 250px); /* Fill remaining width */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease;
+}
+
+/* Ensure the body and html take full height */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .app {
+        flex-direction: column;
+    }
+} 
