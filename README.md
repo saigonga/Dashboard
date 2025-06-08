@@ -69,7 +69,8 @@ npm run dev
 - [Vite](https://vitejs.dev/) - Build tool
 - [FullCalendar](https://fullcalendar.io/) - Calendar component
 - [Chart.js](https://www.chartjs.org/) - Charting library
-- [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+- Custom CSS with CSS Variables - For theming and styling
+- CSS Modules - For component-specific styles
 
 ## 📁 Project Structure
 
@@ -178,9 +179,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Vite](https://vitejs.dev/)
 - [FullCalendar](https://fullcalendar.io/)
 - [Chart.js](https://www.chartjs.org/)
-- [TailwindCSS](https://tailwindcss.com/)
 
 ## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+Your Name - [Sai Gonga]
 Project Link: [https://github.com/yourusername/react-admin-dashboard](https://github.com/yourusername/react-admin-dashboard)
