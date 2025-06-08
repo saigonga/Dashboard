@@ -238,4 +238,51 @@
 
 .modal-actions .cancel-btn:hover {
     background-color: #5a6268;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .kanban-board {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .kanban-column {
+        margin-bottom: 16px;
+    }
+
+    .kanban-header {
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .add-task-btn {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .task-card {
+        padding: 12px;
+    }
+
+    .task-footer {
+        flex-wrap: wrap;
+    }
+
+    .task-btn {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .kanban-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
 } 

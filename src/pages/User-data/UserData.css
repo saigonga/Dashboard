@@ -32,85 +32,181 @@
     background-color: #0056b3;
 }
 
-/* Modal Styles - Reused from KanbanBoard.css for consistency */
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .user-data-container {
+        padding: 15px;
+    }
+
+    .user-data-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .user-data-header h1 {
+        font-size: 20px;
+    }
+
+    .add-user-btn {
+        width: 100%;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    /* Hide search in mobile view */
+    .search-container {
+        display: none;
+    }
+
+    /* Adjust table for mobile */
+    .table-container {
+        overflow-x: auto;
+    }
+
+    /* Make status and role columns more compact */
+    .status-cell, .role-cell {
+        min-width: 80px;
+        font-size: 12px;
+    }
+
+    /* Adjust action buttons */
+    .action-buttons {
+        display: flex;
+        gap: 5px;
+    }
+
+    .action-buttons button {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .user-data-container {
+        padding: 18px;
+    }
+
+    .user-data-header h1 {
+        font-size: 22px;
+    }
+
+    /* Make status and role columns more compact */
+    .status-cell, .role-cell {
+        min-width: 100px;
+    }
+}
+
+/* Modal Styles */
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 .modal-content {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .modal-content h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-  text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .modal-content input[type="text"],
 .modal-content input[type="email"],
 .modal-content select {
-  width: calc(100% - 20px);
-  padding: 12px 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  font-size: 16px;
-  color: #333;
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
 }
 
 .modal-content input[type="text"]::placeholder,
 .modal-content input[type="email"]::placeholder {
-  color: #999;
+    color: #999;
 }
 
 .modal-actions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .modal-actions button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .modal-actions button:first-child {
-  background-color: #007bff;
-  color: white;
+    background-color: #007bff;
+    color: white;
 }
 
 .modal-actions button:first-child:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 .modal-actions .cancel-btn {
-  background-color: #6c757d;
-  color: white;
+    background-color: #6c757d;
+    color: white;
 }
 
 .modal-actions .cancel-btn:hover {
-  background-color: #5a6268;
+    background-color: #5a6268;
+}
+
+/* Mobile Modal Styles */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .modal-content h2 {
+        font-size: 20px;
+    }
+
+    .modal-content input[type="text"],
+    .modal-content input[type="email"],
+    .modal-content select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .modal-actions button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
 } 
