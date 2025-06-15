@@ -9,6 +9,7 @@ import {
     CalendarIcon,
     ClipboardDocumentListIcon
 } from '@heroicons/react/24/outline';
+import UserProfile from '../UserProfile/UserProfile';
 
 function Sidebar() {
     const navItems = [
@@ -23,6 +24,9 @@ function Sidebar() {
         <div className="sidebar">
             <div className="logo">
                 <h1>Dashboard</h1>
+            </div>
+            <div className="userProfile">
+                <UserProfile/>
             </div>
             <nav className="nav-menu">
                 <ul>

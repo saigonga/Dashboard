@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import{ useState } from 'react';
 import './DataTables.css';
 
-const DataTable = ({ users, onDeleteUser, onEditUser }) => {
+const DataTable = ({ users, onDeleteUser}) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [filterRole, setFilterRole] = useState('All');
     const [filterStatus, setFilterStatus] = useState('All');
@@ -19,13 +19,13 @@ const DataTable = ({ users, onDeleteUser, onEditUser }) => {
     };
 
     const filteredUsers = users.filter((user) => {
-      const matchesSearchTerm =
+    const matchesSearchTerm =
         user.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
         user.email.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesRole = filterRole === "All" || user.role === filterRole;
-      const matchesStatus =
+    const matchesRole = filterRole === "All" || user.role === filterRole;
+    const matchesStatus =
         filterStatus === "All" || user.status === filterStatus;
-      return matchesSearchTerm && matchesRole && matchesStatus;
+    return matchesSearchTerm && matchesRole && matchesStatus;
     });
 
     const editUser = (id) => {
